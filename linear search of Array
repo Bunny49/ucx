@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(void){
+    int limit,key, flag=0;
+    printf("Enter the array size\n");
+    scanf("%d",&limit);
+
+int nums[limit];
+printf("Enter array elements\n");
+for(int i=0;i<limit;i++){
+        scanf("%d",&nums[i]);
+
+}
+printf("Enter the element to be searched\n");
+scanf("%d",&key);
+for (int i=0;i<limit;i++){
+        if(nums[i]==key){
+            printf("value found at index: %d\n",i); flag=1;
+            break;
+        }
+}
+
+if(flag==0){ printf("value not found in the array");
+}
+
+return 0;
+}
